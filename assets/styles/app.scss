@@ -1,3 +1,35 @@
-body {
-    background-color: lightgray;
-}
+@import "../fonts/Montserrat/fonts/webfonts/Montserrat.css";
+
+
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1620px
+);
+@import "~bootstrap/scss/bootstrap";
+
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '~@fortawesome/fontawesome-free/css/regular.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
+@import '~@fortawesome/fontawesome-free/css/brands.css';
+
+
+/* import base */
+@import "base/base";
+@import "base/utilities";
+
+
+/* all pages scss */
+@import "pages/all";
+
+
+/* layouts */
+@import "layouts/navbarre";
+@import "layouts/footer";
+
+// Components
+@import 'components/all';
+
